@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts  
+Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">  
+ 
+    <struts>
+    	<package name="Docs" extends="struts-default">
+    	
+    	<action name="verified" class="Docs.Verification">
+    		<result name="success">success.jsp</result>
+    		<result name="error">error.jsp</result>
+    		
+    	</action>
+    	<action name="View" class="Docs.View_docs">
+    	<result name="found">View.jsp</result>
+    	<result name="not_found">error.jsp</result>
+    	</action>
+    	</package>
+    </struts>
